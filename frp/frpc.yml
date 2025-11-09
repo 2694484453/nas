@@ -1,0 +1,14 @@
+# docker-compose.yml
+version: '3'
+services:
+  frpc:
+    image: snowdreamtech/frpc:latest  # 使用官方镜像[6,8](@ref)
+    container_name: frpc
+  #  network_mode: host  # 推荐host模式避免端口映射问题[8](@ref)
+    ports:
+      - "7000:7000"
+      - "7500:7500"
+    volumes:
+      - /vol1/1000/docker-compose/nas/frp/client/frpc.toml:/etc/frp/frpc.toml
+      - /vol1/1000/frp:/var/log/frp  # 日志持久化[6](@ref)
+    restart: always

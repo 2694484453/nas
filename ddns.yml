@@ -1,0 +1,15 @@
+version: "3"
+services:
+  ddns:
+   image: newfuture/ddns
+   container_name: ddns
+   restart: always
+   network_mode: host
+   environment:
+     - DDNS_DNS=alidns
+     - DDNS_ID=${DDNS_ID}
+     - DDNS_TOKEN=${DDNS_TOKEN}
+     - DDNS_IPV4=local.gpg123.vip,ubuntu.gpg123.vip,nas.gpg123.vip
+     - DDNS_INDEX4=['public',0]
+#   volumes:
+#    - ./config:/ddns

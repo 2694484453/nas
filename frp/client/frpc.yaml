@@ -1,0 +1,20 @@
+webServer:
+  addr: "0.0.0.0"
+  port: 7500
+  user: "gaopuguang"
+  password: "1999y4m30d"
+serverAddr: "hcs.gpg123.vip"
+serverPort: 7000
+auth:
+  token: "ADt8zh5VFdJKcccVWh2jkv1l6Z0IblSvm0H7M2yclJpYkWV0KPEadr9gZWdd77HM"
+proxies:
+  - name: "emby-service"
+    type: "http"
+    localIP: "127.0.0.1"
+    localPort: 8096
+    customDomains: ["emby.nas.gpg123.vip"]
+  - name: "feiniu-video-service"
+    type: "http"
+    localIP: "127.0.0.1"
+    localPort: 5666
+    customDomains: [ "video.nas.gpg123.vip" ]

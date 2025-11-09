@@ -1,0 +1,12 @@
+common:
+  bindPort: 7000
+  auth:
+    token: "ADt8zh5VFdJKcccVWh2jkv1l6Z0IblSvm0H7M2yclJpYkWV0KPEadr9gZWdd77HM"
+  webServer:
+    addr: "0.0.0.0"
+    port: 7500
+    user: "gaopuguang"
+    password: "1999y4m30d"
+  log:
+    to: "console"
+    level: "info"

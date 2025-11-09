@@ -1,0 +1,17 @@
+version: "3"
+services:
+  npc:
+    image: 'ffdfgdfg/npc:latest'
+    container_name: npc
+    restart: always
+    privileged: true
+    network_mode: host
+    environment:
+      - NPC_SERVER_ADDR=server.gpg123.vip:8024
+      - NPC_SERVER_VKEY=1evw8b32llxd7xpf
+    ports:
+      - '8024:8024'
+      - '8082:8082'
+      - '8083:8083'
+    volumes:
+      - /home/nps/client/conf:/conf

@@ -1,0 +1,12 @@
+version: "3"
+services:
+  fntv:
+    image: 2513002960/fntv:latest
+    container_name: fntv
+    privileged: true
+    user: root
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+#    volumes:
+#      - /home/fntv/config:/app/data/config

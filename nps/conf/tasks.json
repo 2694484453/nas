@@ -1,0 +1,71 @@
+{
+  "Id": 5,
+  "Port": 111,
+  "ServerIp": "",
+  "Mode": "tcp",
+  "Status": true,
+  "RunStatus": false,
+  "Client": {
+    "Cnf": {
+      "U": "",
+      "P": "",
+      "Compress": false,
+      "Crypt": false
+    },
+    "Id": 2,
+    "VerifyKey": "1evw8b32llxd7xpf",
+    "Addr": "",
+    "Remark": "192.168.1.110",
+    "Status": true,
+    "IsConnect": false,
+    "RateLimit": 0,
+    "Flow": {
+      "ExportFlow": 0,
+      "InletFlow": 0,
+      "FlowLimit": 0
+    },
+    "Rate": {
+      "NowRate": 0
+    },
+    "NoStore": false,
+    "NoDisplay": false,
+    "MaxConn": 0,
+    "NowConn": 0,
+    "WebUserName": "",
+    "WebPassword": "",
+    "ConfigConnAllow": true,
+    "MaxTunnelNum": 0,
+    "Version": ""
+  },
+  "Ports": "",
+  "Flow": {
+    "ExportFlow": 0,
+    "InletFlow": 0,
+    "FlowLimit": 0
+  },
+  "Password": "",
+  "Remark": "192.168.1.110",
+  "TargetAddr": "",
+  "NoStore": false,
+  "LocalPath": "",
+  "StripPre": "",
+  "Target": {
+    "TargetStr": "192.168.1.110:111",
+    "TargetArr": null,
+    "LocalProxy": false
+  },
+  "MultiAccount": null,
+  "HealthCheckTimeout": 0,
+  "HealthMaxFail": 0,
+  "HealthCheckInterval": 0,
+  "HealthNextTime": "0001-01-01T00:00:00Z",
+  "HealthMap": null,
+  "HttpHealthUrl": "",
+  "HealthRemoveArr": null,
+  "HealthCheckType": "",
+  "HealthCheckTarget": ""
+}
+*#*{"Id": 2, "Port": 7890,"ServerIp": "", "Mode": "tcp", "Status":true, "RunStatus": true, "Client": {"Cnf": {"U": "", "P": "","Compress": false, "Crypt": false}, "Id": 2, "VerifyKey": "1evw8b32llxd7xpf", "Addr": "", "Remark": "192.168.1.110", "Status": true, "IsConnect": false, "RateLimit": 0, "Flow": {"ExportFlow": 0, "InletFlow": 0, "FlowLimit":0}, "Rate": {"NowRate": 0}, "NoStore": false, "NoDisplay": false, "MaxConn": 0, "NowConn": 0, "WebUserName": "", "WebPassword": "", "ConfigConnAllow": true, "MaxTunnelNum": 0, "Version": ""}, "Ports":"", "Flow": {"ExportFlow": 0, "InletFlow": 0, "FlowLimit": 0}, "Password":"", "Remark": "192.168.1.160", "TargetAddr": "","NoStore": false, "LocalPath": "", "StripPre":"", "Target": {"TargetStr": "192.168.1.160:7890\r\n192.168.1.110:7890", "TargetArr": null, "LocalProxy": false}, "MultiAccount":null, "HealthCheckTimeout": 0, "HealthMaxFail": 0,"HealthCheckInterval": 0, "HealthNextTime": "0001-01-01T00:00:00Z", "HealthMap":null, "HttpHealthUrl": "", "HealthRemoveArr": null,"HealthCheckType": "", "HealthCheckTarget": ""
+}
+*#*{"Id": 4, "Port": 2049,"ServerIp": "", "Mode": "tcp", "Status":true, "RunStatus": true, "Client": {"Cnf": {"U": "", "P": "","Compress": false, "Crypt": false}, "Id": 2, "VerifyKey": "1evw8b32llxd7xpf", "Addr": "", "Remark": "192.168.1.110", "Status": true, "IsConnect": false, "RateLimit": 0, "Flow": {"ExportFlow": 0, "InletFlow": 0, "FlowLimit":0}, "Rate": {"NowRate": 0}, "NoStore": false, "NoDisplay": false, "MaxConn": 0, "NowConn": 0, "WebUserName": "", "WebPassword": "", "ConfigConnAllow": true, "MaxTunnelNum": 0, "Version": ""}, "Ports":"", "Flow": {"ExportFlow": 0, "InletFlow": 0, "FlowLimit": 0}, "Password":"", "Remark": "192.168.1.110", "TargetAddr": "","NoStore": false, "LocalPath": "", "StripPre":"", "Target": {"TargetStr": "192.168.1.110:2049", "TargetArr": null, "LocalProxy": false}, "MultiAccount":null, "HealthCheckTimeout": 0, "HealthMaxFail": 0,"HealthCheckInterval": 0, "HealthNextTime": "0001-01-01T00:00:00Z", "HealthMap":null, "HttpHealthUrl": "", "HealthRemoveArr": null,"HealthCheckType": "", "HealthCheckTarget": ""
+}

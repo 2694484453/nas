@@ -1,0 +1,9 @@
+version: "3"
+services:
+  vocechat-server:
+    image: dockerpull.com/privoce/vocechat-server:latest
+    container_name: vocechat-server
+    restart: on-failure
+    ports:
+      - "3000:3000"
+

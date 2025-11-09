@@ -1,0 +1,14 @@
+version: "3"
+services:
+  nps:
+    image: 'ffdfgdfg/nps:latest'
+    container_name: nps
+    restart: on-failure
+    network_mode: host
+#    ports:
+#      - '180:80'
+#      - '18080:8080'
+#      - '1443:443'
+#      - '8024:8024'
+    volumes:
+      - /home/nps/server/conf:/conf

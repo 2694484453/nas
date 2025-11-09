@@ -1,0 +1,17 @@
+version: "3"
+services:
+  emby:
+    image: emby/embyserver:latest
+    container_name: emby
+    privileged: true
+    user: root
+    restart: unless-stopped
+    ports:
+      - "8096:8096"
+      - "8920:8920"
+    volumes:
+      - /home/emby/config:/config
+      - /mnt/1t:/media/1t
+      - /mnt/500g:/media/500g
+      - /mnt/4t:/media/4t
+

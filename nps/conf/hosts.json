@@ -1,0 +1,55 @@
+{
+  "Id": 1,
+  "Host": "nps.gpg123.vip",
+  "HeaderChange": "",
+  "HostChange": "",
+  "Location": "/video",
+  "Remark": "192.168.1.110",
+  "Scheme": "http",
+  "CertFilePath": "",
+  "KeyFilePath": "",
+  "NoStore": false,
+  "IsClose": false,
+  "Flow": {
+    "ExportFlow": 0,
+    "InletFlow": 0,
+    "FlowLimit": 0
+  },
+  "Client": {
+    "Cnf": {
+      "U": "",
+      "P": "",
+      "Compress": false,
+      "Crypt": false
+    },
+    "Id": 2,
+    "VerifyKey": "1evw8b32llxd7xpf",
+    "Addr": "",
+    "Remark": "192.168.1.110",
+    "Status": true,
+    "IsConnect": false,
+    "RateLimit": 0,
+    "Flow": {
+      "ExportFlow": 0,
+      "InletFlow": 0,
+      "FlowLimit": 0
+    },
+    "Rate": {
+      "NowRate": 0
+    },
+    "NoStore": false,
+    "NoDisplay": false,
+    "MaxConn": 0,
+    "NowConn": 0,
+    "WebUserName": "",
+    "WebPassword": "",
+    "ConfigConnAllow": true,
+    "MaxTunnelNum": 0,
+    "Version": ""
+  },
+  "Target": {
+    "TargetStr": "192.168.1.110:9200",
+    "TargetArr": null,
+    "LocalProxy": false
+  }
+}

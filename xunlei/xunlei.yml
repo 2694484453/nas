@@ -1,0 +1,12 @@
+version: '3'
+services:
+  xunlei:
+    container_name: xunlei
+    image: cnk3x/xunlei:latest
+    privileged: true
+    network_mode: host
+    ports:
+      - "2345:2345"
+    volumes:
+      - /mnt:/xunlei/downloads
+    restart: unless-stopped
