@@ -1,0 +1,14 @@
+[Unit]
+Description=Run FRPS Script at Startup
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStart=/usr/local/bin/frps --config /home/frp/server/frps.toml
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
