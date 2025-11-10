@@ -1,0 +1,9 @@
+*.sh text eol=lf
+*.sh -text -merge -diff
+*.sh mode=0755
+prometheus-3.5.0.linux-amd64/prometheus mode=0755
+
+#shell文件权限差异化问题解决1
+#chmod +x script.sh
+#git update-index --chmod=+x *.sh
+#git commit -m "Add executable permission to *.sh"
