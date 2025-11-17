@@ -6,7 +6,8 @@ After=network-online.target
 [Service]
 Type=simple
 ExecReload=/bin/kill -HUP $MAINPID
-ExecStart=/usr/local/bin/frps --config /home/frp/server/frps.toml
+#需要根据目录位置进行修改
+ExecStart=/usr/local/bin/frps --config /home/nas/frp/server/frps.toml
 Restart=always
 RestartSec=3
 
