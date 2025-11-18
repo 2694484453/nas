@@ -48,7 +48,7 @@ customDomains = ["nas.gpg123.vip"]
 [[proxies]]
 name = "static_file"
 type = "tcp"
-remotePort = 8080
+remotePort = 7001
 [proxies.plugin]
 type = "static_file"
 # 本地文件目录，对外提供访问
