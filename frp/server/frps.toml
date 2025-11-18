@@ -11,3 +11,6 @@ webServer.password = "1999y4m30d"  # 避免默认密码[1,8](@ref)
 # 域名代理支持（HTTPS需配置）
 vhostHTTPPort = 80
 #vhostHTTPSPort = 443  # 需配合SSL证书使用[5](@ref)
+
+#开启监控
+enablePrometheus = true

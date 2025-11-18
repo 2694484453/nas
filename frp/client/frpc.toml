@@ -1,5 +1,6 @@
 serverAddr = "hongkong.gpg123.vip"   #"hcs.gpg123.vip"
 serverPort = 7000
+#includes = ["./confd/*.toml"]
 auth.token = "ADt8zh5VFdJKcccVWh2jkv1l6Z0IblSvm0H7M2yclJpYkWV0KPEadr9gZWdd77HM"  # 与服务端一致
 #不能删除, 否则连接不上会闪退
 loginFailExit=false
@@ -54,13 +55,23 @@ remotePort = 11434
 
 #转发 Unix 域套接字
 [[proxies]]
-name = "unix_domain_socket"
+name = "unix_docker_socket"
 type = "tcp"
 remotePort = 2345
 [proxies.plugin]
 type = "unix_domain_socket"
 # Unix 域套接字路径
 unixPath = "/var/run/docker.sock"
+
+#转发 Unix 域套接字
+[[proxies]]
+name = "unix_containerd_socket"
+type = "tcp"
+remotePort = 10100
+[proxies.plugin]
+type = "unix_domain_socket"
+# Unix 域套接字路径
+unixPath = "/var/run/containerd.sock"
 
 #ssh
 [[proxies]]
