@@ -1,0 +1,80 @@
+# emby
+[[proxies]]
+name = "emby"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 8096
+customDomains = ["emby.nas.gpg123.vip"]
+
+# video
+[[proxies]]
+name = "fn-video"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 8005
+customDomains = ["video.nas.gpg123.vip","video1.nas.gpg123.vip","video2.nas.gpg123.vip","video3.nas.gpg123.vip","video4.nas.gpg123.vip","video5.nas.gpg123.vip"]
+
+# video
+[[proxies]]
+name = "jellyfin-video-server"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 8096
+customDomains = ["jf-video.nas.gpg123.vip","jf-video1.nas.gpg123.vip","jf-video2.nas.gpg123.vip","jf-video3.nas.gpg123.vip"]
+
+# 相册
+[[proxies]]
+name = "fn-picture"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 8006
+customDomains = ["picture.nas.gpg123.vip","picture1.nas.gpg123.vip","picture2.nas.gpg123.vip","picture3.nas.gpg123.vip"]
+
+#飞牛
+[[proxies]]
+name = "feiniu-nas"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 5666
+customDomains = ["nas.gpg123.vip"]
+
+
+#prometheus
+[[proxies]]
+name = "prometheus"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 9090
+customDomains = ["prometheus.nas.gpg123.vip"]
+
+#prometheus-alert
+[[proxies]]
+name = "prometheus-alert"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 9093
+customDomains = ["prometheus-alert.nas.gpg123.vip","alert.nas.gpg123.vip"]
+
+#node-exporter
+[[proxies]]
+name = "node-exporter"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 9100
+customDomains = ["node-exporter.nas.gpg123.vip"]
+
+#amd-smi-exporter
+[[proxies]]
+name = "amd-smi-exporter"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 2021
+customDomains = ["amd-smi-exporter.nas.gpg123.vip"]
+
+#amd-gpu-exporter
+[[proxies]]
+name = "amd-gpu-exporter"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 5000
+customDomains = ["amd-gpu-exporter.nas.gpg123.vip"]

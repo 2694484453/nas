@@ -1,0 +1,19 @@
+#转发 Unix 域套接字
+[[proxies]]
+name = "unix_docker_socket"
+type = "tcp"
+remotePort = 2345
+[proxies.plugin]
+type = "unix_domain_socket"
+# Unix 域套接字路径
+unixPath = "/var/run/docker.sock"
+
+#转发 Unix 域套接字
+[[proxies]]
+name = "unix_containerd_socket"
+type = "tcp"
+remotePort = 10100
+[proxies.plugin]
+type = "unix_domain_socket"
+# Unix 域套接字路径
+unixPath = "/var/run/containerd.sock"

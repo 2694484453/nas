@@ -1,0 +1,46 @@
+
+#转发ollam-api
+[[proxies]]
+name = "ollama-api"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 11434
+remotePort = 11434
+
+#macos-usb
+[[proxies]]
+name = "smb_share_apk"
+type = "tcp"
+remotePort = 7002
+[proxies.plugin]
+type = "static_file"
+# 本地文件目录，对外提供访问
+localPath = "/vol02/1000-0-df070305"
+# URL 中的前缀，将被去除，保留的内容即为要访问的文件路径
+stripPrefix = ""
+
+#400G
+[[proxies]]
+name = "smb_share_feiniu"
+type = "tcp"
+remotePort = 7001
+[proxies.plugin]
+type = "static_file"
+# 本地文件目录，对外提供访问
+localPath = "/vol00/WDC WD5000LPLX-66ZNTT1"
+# URL 中的前缀，将被去除，保留的内容即为要访问的文件路径
+stripPrefix = ""
+#httpUser = "test"
+#httpPassword = "test1234"
+
+#data1
+[[proxies]]
+name = "smb_share_data"
+type = "tcp"
+remotePort = 7003
+[proxies.plugin]
+type = "static_file"
+# 本地文件目录，对外提供访问
+localPath = "/vol02/1000-0-d0b39145"
+# URL 中的前缀，将被去除，保留的内容即为要访问的文件路径
+stripPrefix = ""
