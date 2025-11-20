@@ -2,7 +2,7 @@
 [[proxies]]
 name = "ollama-api"
 type = "tcp"
-localIP = "local.gpg123.vip"
+localIP = "192.168.3.15"
 localPort = 11434
 remotePort = 11434
 
