@@ -46,7 +46,7 @@ customDomains = ["nas.gpg123.vip"]
 
 #400G
 [[proxies]]
-name = "static_file"
+name = "smb_share_feiniu"
 type = "tcp"
 remotePort = 7001
 [proxies.plugin]
