@@ -1,7 +1,7 @@
-serverAddr = "hongkong.gpg123.vip"   #"hcs.gpg123.vip"
+serverAddr = "hongkong.gpg123.vip"
 serverPort = 7000
 # token
-auth.token = "ADt8zh5VFdJKcccVWh2jkv1l6Z0IblSvm0H7M2yclJpYkWV0KPEadr9gZWdd77HM"  # 与服务端一致
+auth.token = "ADt8zh5VFdJKcccVWh2jkv1l6Z0IblSvm0H7M2yclJpYkWV0KPEadr9gZWdd77HM"
 #不能删除, 否则连接不上会闪退
 loginFailExit=false
 # 分片
