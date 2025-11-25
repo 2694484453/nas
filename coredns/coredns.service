@@ -1,6 +1,21 @@
 [Unit]
 Description=CoreDNS
+# 链接
+Documentation=https://example.com/docs
+After=network.target
+Wants=network.target
 
 [Service]
-Type=notify
+Type=simple
+WorkingDirectory=/opt/example
 ExecStart=/usr/local/bin/coredns -conf /home/nas/coredns/Corefile
+ExecReload=/bin/kill -HUP $MAINPID
+# 重启条件
+Restart=on-failure
+# 重启次数
+RestartSec=5
+# 重启超时
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target
