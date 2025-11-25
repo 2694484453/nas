@@ -1,0 +1,6 @@
+[Unit]
+Description=CoreDNS
+
+[Service]
+Type=notify
+ExecStart=/usr/local/bin/coredns -conf /home/nas/coredns/Corefile
