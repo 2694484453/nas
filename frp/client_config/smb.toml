@@ -14,7 +14,7 @@ httpPassword = "test1234"
 [[proxies]]
 name = "smb_share_data"
 type = "tcp"
-remotePort = 7003
+remotePort = 7002
 [proxies.plugin]
 type = "static_file"
 localPath = "/vol1/1000"
@@ -23,7 +23,7 @@ stripPrefix = ""
 #aliyunpan
 name = "smb_share_aliyunpan"
 type = "tcp"
-remotePort = 7004
+remotePort = 7003
 [proxies.plugin]
 type = "static_file"
 localPath = "/vol02/1000-1-7c388700"
