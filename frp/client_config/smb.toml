@@ -21,6 +21,7 @@ localPath = "/vol1/1000"
 stripPrefix = ""
 
 #aliyunpan
+[[proxies]]
 name = "smb_share_aliyunpan"
 type = "tcp"
 remotePort = 7003
