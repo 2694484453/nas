@@ -1,4 +1,6 @@
+# 服务端口
 bindPort = 7000
+# 认证方式
 auth.method = "token"
 auth.token = "ADt8zh5VFdJKcccVWh2jkv1l6Z0IblSvm0H7M2yclJpYkWV0KPEadr9gZWdd77HM"  # 必填，客户端需一致[4,8](@ref)
 
