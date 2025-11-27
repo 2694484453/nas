@@ -5,9 +5,7 @@ type = "tcp"
 remotePort = 7001
 [proxies.plugin]
 type = "static_file"
-# 本地文件目录，对外提供访问
 localPath = "/vol00/WDC WD4000FYYZ-01UL1B3"
-# URL 中的前缀，将被去除，保留的内容即为要访问的文件路径
 stripPrefix = ""
 httpUser = "test"
 httpPassword = "test1234"
@@ -31,9 +29,7 @@ type = "tcp"
 remotePort = 7003
 [proxies.plugin]
 type = "static_file"
-# 本地文件目录，对外提供访问
 localPath = "/vol1/1000"
-# URL 中的前缀，将被去除，保留的内容即为要访问的文件路径
 stripPrefix = ""
 
 #aliyunpan
@@ -42,7 +38,5 @@ type = "tcp"
 remotePort = 7004
 [proxies.plugin]
 type = "static_file"
-# 本地文件目录，对外提供访问
 localPath = "/vol02/1000-1-7c388700"
-# URL 中的前缀，将被去除，保留的内容即为要访问的文件路径
 stripPrefix = ""
