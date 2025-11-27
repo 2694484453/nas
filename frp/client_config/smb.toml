@@ -10,18 +10,6 @@ stripPrefix = ""
 httpUser = "test"
 httpPassword = "test1234"
 
-#macos-usb
-#[[proxies]]
-#name = "smb_share_apk"
-#type = "tcp"
-#remotePort = 7002
-#[proxies.plugin]
-#type = "static_file"
-## 本地文件目录，对外提供访问
-#localPath = "/vol02/1000-0-df070305"
-## URL 中的前缀，将被去除，保留的内容即为要访问的文件路径
-#stripPrefix = ""
-#
 # data
 [[proxies]]
 name = "smb_share_data"
