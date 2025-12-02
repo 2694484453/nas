@@ -1,6 +1,6 @@
 version: "3"
 services:
-  clash-premium:
+  clash:
     image: dreamacro/clash-premium
     container_name: clash-premium
     privileged: true
