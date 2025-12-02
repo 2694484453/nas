@@ -3,6 +3,8 @@ services:
   clash-premium:
     image: dreamacro/clash-premium
     container_name: clash-premium
+    privileged: true
+    hostname: clash
     restart: unless-stopped
     ports:
       - "7890:7890"
@@ -10,4 +12,14 @@ services:
       - "9090:9090"
     volumes:
       - /home/nas/clash/config.yaml:/root/.config/config.yaml
-
+  yacd:
+    image: ghcr.io/haishanh/yacd:master
+    container_name: yacd
+    hostname: yacd
+    restart: unless-stopped
+    ports:
+      - 9091:80
+    environment:
+      - TZ=Asia/Shanghai
+    depends_on:
+      - clash
