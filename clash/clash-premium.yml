@@ -7,6 +7,6 @@ services:
     ports:
       - "7890:7890"
       - "9090:9090"
-    volumes:
-      - /home/clash:/root/.config/clash
+#    volumes:
+#      - /home/clash:/root/.config/clash
 
