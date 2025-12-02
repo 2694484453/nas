@@ -9,7 +9,6 @@ services:
     ports:
       - "7890:7890"
       - "7891:7891"
-      - "9090:9090"
     volumes:
       - /home/nas/clash/config.yaml:/root/.config/config.yaml
   yacd:
