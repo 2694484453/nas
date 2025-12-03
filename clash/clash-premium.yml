@@ -12,7 +12,7 @@ services:
       - "7892:7892"
       - "9090:9090"
     volumes:
-      - /home/nas/clash/config.yaml:/root/.config/config.yaml
+      - /home/nas/clash/cloudflare.yaml:/root/.config/config.yaml
   yacd:
     image: ghcr.io/haishanh/yacd:master
     container_name: yacd
