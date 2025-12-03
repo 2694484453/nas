@@ -13,7 +13,7 @@ cd /home && git clone https://github.com/2694484453/nas.git
 
 > 3.部署
 ```text
-docker-compose -f clash.yml up -d --force-recreate
+docker-compose -f clash-premium.yml up -d --force-recreate
 ```
 > 4.访问
 
