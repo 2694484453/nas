@@ -6,8 +6,8 @@ Wants=network.target
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-Environment=HTTP_PROXY=http://proxy.gpg123.vip:7890
-Environment=HTTPS_PROXY=http://proxy.gpg123.vip:7890
+Environment=HTTP_PROXY=http://proxy.gpg123.cn:7890
+Environment=HTTPS_PROXY=http://proxy.gpg123.cn:7890
 ExecStart=/bin/bash -c 'echo "Proxy environment variables set."'
 ExecReload=/bin/bash -c 'echo "Service reloaded, variables are persistent."'
 
