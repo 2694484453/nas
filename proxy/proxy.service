@@ -1,0 +1,15 @@
+[Unit]
+Description=Set HTTP and HTTPS Proxy Environment Variables
+After=network.target
+Wants=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+Environment=HTTP_PROXY=http://mac.gpg123.vip:7890
+Environment=HTTPS_PROXY=http://mac.gpg123.vip:7890
+ExecStart=/bin/bash -c 'echo "Proxy environment variables set."'
+ExecReload=/bin/bash -c 'echo "Service reloaded, variables are persistent."'
+
+[Install]
+WantedBy=default.target
