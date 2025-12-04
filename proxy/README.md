@@ -5,7 +5,7 @@ proxy
 linux端设置代理proxy教程
 
 ## 安装
-
+推荐服务主机地址使用域名或hosts映射方式，方便后期使用和修改
 ### 方式1: 命令行配置
 如果需要认证格式为export http_proxy="http://username:password@xxxx:7890/"
 ```text
