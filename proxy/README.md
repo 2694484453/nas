@@ -1,5 +1,6 @@
 ## 项目名称
 proxy
+
 ## 简介
 linux端proxy软件
 
@@ -25,7 +26,6 @@ proxychains -f /etc/proxychains.conf curl ifconfig.me
 
 ## 使用
 ```text
-
 
 export PROXYCHAINS_CONF_FILE=/etc/proxychains.conf
 ```
