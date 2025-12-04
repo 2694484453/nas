@@ -27,9 +27,9 @@ systemctl start proxy.service
 ## 验证服务端
 流量是否可用，有正确内容
 ```text
-curl -x http://192.168.3.19:7890 https://www.example.com
+curl -x http://ip:port https://www.example.com
 
-curl -x socks5://192.168.3.19:7890 https://www.example.com
+curl -x socks5://ip:port https://www.example.com
 
 ...
 ```
