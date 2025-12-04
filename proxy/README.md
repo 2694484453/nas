@@ -2,11 +2,12 @@
 proxy
 
 ## 简介
-linux端proxy教程
+linux端设置代理proxy教程
 
 ## 安装
 
 ### 方式1: 命令行配置
+如果需要认证格式为export http_proxy="http://username:password@xxxx:7890/"
 ```text
 export http_proxy="http://xxxx:7890/"
 export https_proxy="https://xxxx:7890/"
