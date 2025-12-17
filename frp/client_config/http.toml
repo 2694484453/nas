@@ -66,7 +66,7 @@ customDomains = ["node-exporter.nas.gpg123.vip"]
 [[proxies]]
 name = "amd-smi-exporter"
 type = "http"
-localIP = "127.0.0.1"
+localIP = "192.168.3.15"
 localPort = 2021
 customDomains = ["amd-smi-exporter.nas.gpg123.vip"]
 
@@ -74,9 +74,18 @@ customDomains = ["amd-smi-exporter.nas.gpg123.vip"]
 [[proxies]]
 name = "amd-gpu-exporter"
 type = "http"
-localIP = "127.0.0.1"
+localIP = "192.168.3.15"
 localPort = 5000
 customDomains = ["amd-gpu-exporter.nas.gpg123.vip"]
+
+#windows-exporter
+[[proxies]]
+name = "windows-exporter"
+type = "http"
+localIP = "192.168.3.15"
+localPort = 9182
+customDomains = ["windows-exporter.nas.gpg123.vip"]
+
 
 #kube-state-metrics
 [[proxies]]
