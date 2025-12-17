@@ -77,3 +77,11 @@ type = "http"
 localIP = "127.0.0.1"
 localPort = 5000
 customDomains = ["amd-gpu-exporter.nas.gpg123.vip"]
+
+#kube-state-metrics
+[[proxies]]
+name = "kube-state-metrics"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 8086
+customDomains = ["kube-state-metrics.nas.gpg123.vip"]
