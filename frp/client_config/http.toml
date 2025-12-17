@@ -86,7 +86,6 @@ localIP = "192.168.3.15"
 localPort = 9182
 customDomains = ["windows-exporter.nas.gpg123.vip"]
 
-
 #kube-state-metrics
 [[proxies]]
 name = "kube-state-metrics"
