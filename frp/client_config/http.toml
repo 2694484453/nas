@@ -94,6 +94,14 @@ localIP = "127.0.0.1"
 localPort = 8086
 customDomains = ["kube-state-metrics.nas.gpg123.vip"]
 
+#black-box
+[[proxies]]
+name = "black-box"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 9115
+customDomains = ["black-box.nas.gpg123.vip"]
+
 #cloud-server
 [[proxies]]
 name = "cloud-server"
