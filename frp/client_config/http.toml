@@ -109,3 +109,11 @@ type = "http"
 localIP = "192.168.3.6"
 localPort = 9099
 customDomains = ["cloud-server.nas.gpg123.vip"]
+
+#stableDiffusion
+[[proxies]]
+name = "stableDiffusion"
+type = "http"
+localIP = "192.168.3.18"
+localPort = 7860
+customDomains = ["sd.nas.gpg123.vip"]
