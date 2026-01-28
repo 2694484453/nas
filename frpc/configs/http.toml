@@ -4,7 +4,7 @@ name = "emby"
 type = "http"
 localIP = "127.0.0.1"
 localPort = 8096
-customDomains = ["emby.nas.gpg123.vip"]
+customDomains = ["emby.gpg123.cn"]
 
 # video
 [[proxies]]
@@ -12,7 +12,7 @@ name = "fn-video"
 type = "http"
 localIP = "127.0.0.1"
 localPort = 8005
-customDomains = ["video.nas.gpg123.vip","video1.nas.gpg123.vip","video2.nas.gpg123.vip","video3.nas.gpg123.vip","video4.nas.gpg123.vip","video5.nas.gpg123.vip"]
+customDomains = ["video.gpg123.cn","video1.gpg123.cn","video2.gpg123.cn","video3.gpg123.cn","video4.gpg123.cn","video5.gpg123.cn"]
 
 # video
 [[proxies]]
@@ -20,7 +20,7 @@ name = "jellyfin-video-server"
 type = "http"
 localIP = "127.0.0.1"
 localPort = 8096
-customDomains = ["jf-video.nas.gpg123.vip","jf-video1.nas.gpg123.vip","jf-video2.nas.gpg123.vip","jf-video3.nas.gpg123.vip"]
+customDomains = ["jf-video.gpg123.cn","jf-video1.gpg123.cn","jf-video2.gpg123.cn","jf-video3.gpg123.cn"]
 
 # 相册
 [[proxies]]
@@ -28,7 +28,7 @@ name = "fn-picture"
 type = "http"
 localIP = "127.0.0.1"
 localPort = 8006
-customDomains = ["picture.nas.gpg123.vip","picture1.nas.gpg123.vip","picture2.nas.gpg123.vip","picture3.nas.gpg123.vip"]
+customDomains = ["picture.gpg123.cn","picture1.gpg123.cn","picture2.gpg123.cn","picture3.gpg123.cn"]
 
 #飞牛
 [[proxies]]
@@ -36,7 +36,7 @@ name = "feiniu-nas"
 type = "http"
 localIP = "127.0.0.1"
 localPort = 5666
-customDomains = ["nas.gpg123.vip"]
+customDomains = ["gpg123.cn"]
 
 #prometheus
 [[proxies]]
@@ -44,7 +44,7 @@ name = "prometheus"
 type = "http"
 localIP = "127.0.0.1"
 localPort = 9090
-customDomains = ["prometheus.nas.gpg123.vip"]
+customDomains = ["prometheus.gpg123.cn"]
 
 #prometheus-alert
 [[proxies]]
@@ -52,7 +52,7 @@ name = "prometheus-alert"
 type = "http"
 localIP = "127.0.0.1"
 localPort = 9093
-customDomains = ["prometheus-alert.nas.gpg123.vip","alert.nas.gpg123.vip"]
+customDomains = ["prometheus-alert.gpg123.cn","alert.gpg123.cn"]
 
 #node-exporter
 [[proxies]]
@@ -60,7 +60,7 @@ name = "node-exporter"
 type = "http"
 localIP = "127.0.0.1"
 localPort = 9100
-customDomains = ["node-exporter.nas.gpg123.vip"]
+customDomains = ["node-exporter.gpg123.cn"]
 
 #amd-smi-exporter
 [[proxies]]
@@ -68,7 +68,7 @@ name = "amd-smi-exporter"
 type = "http"
 localIP = "192.168.3.15"
 localPort = 2021
-customDomains = ["amd-smi-exporter.nas.gpg123.vip"]
+customDomains = ["amd-smi-exporter.gpg123.cn"]
 
 #amd-gpu-exporter
 [[proxies]]
@@ -76,7 +76,7 @@ name = "amd-gpu-exporter"
 type = "http"
 localIP = "192.168.3.15"
 localPort = 5000
-customDomains = ["amd-gpu-exporter.nas.gpg123.vip"]
+customDomains = ["amd-gpu-exporter.gpg123.cn"]
 
 #windows-exporter
 [[proxies]]
@@ -84,7 +84,7 @@ name = "windows-exporter"
 type = "http"
 localIP = "192.168.3.15"
 localPort = 9182
-customDomains = ["windows-exporter.nas.gpg123.vip"]
+customDomains = ["windows-exporter.gpg123.cn"]
 
 #kube-state-metrics
 [[proxies]]
@@ -92,7 +92,7 @@ name = "kube-state-metrics"
 type = "http"
 localIP = "127.0.0.1"
 localPort = 8086
-customDomains = ["kube-state-metrics.nas.gpg123.vip"]
+customDomains = ["kube-state-metrics.gpg123.cn"]
 
 #black-box
 [[proxies]]
@@ -100,7 +100,7 @@ name = "black-box"
 type = "http"
 localIP = "127.0.0.1"
 localPort = 9115
-customDomains = ["black-box.nas.gpg123.vip"]
+customDomains = ["black-box.gpg123.cn"]
 
 #cloud-server
 [[proxies]]
@@ -108,7 +108,7 @@ name = "cloud-server"
 type = "http"
 localIP = "192.168.3.6"
 localPort = 9099
-customDomains = ["cloud-server.nas.gpg123.vip"]
+customDomains = ["cloud-server.gpg123.cn"]
 
 #stableDiffusion
 [[proxies]]
@@ -116,4 +116,4 @@ name = "stableDiffusion"
 type = "http"
 localIP = "192.168.3.18"
 localPort = 7860
-customDomains = ["sd.nas.gpg123.vip"]
+customDomains = ["sd.gpg123.cn"]

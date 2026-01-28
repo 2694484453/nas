@@ -1,5 +1,5 @@
 [Unit]
-Description=Run FRPS Script at Startup
+Description=Run FRPC Script at Startup
 Wants=network-online.target
 After=network-online.target
 
@@ -7,7 +7,7 @@ After=network-online.target
 Type=simple
 ExecReload=/bin/kill -HUP $MAINPID
 #需要根据目录位置进行修改
-ExecStart=/usr/local/bin/frps --config /home/nas/frp/server/frps.toml
+ExecStart=/usr/local/bin/frpc --config /home/nas/frpc/frpc.toml
 Restart=always
 RestartSec=3
 

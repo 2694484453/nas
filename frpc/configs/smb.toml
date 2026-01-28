@@ -29,3 +29,13 @@ remotePort = 6003
 type = "static_file"
 localPath = "/vol02/1000-1-7c388700"
 stripPrefix = ""
+
+#smb
+[[proxies]]
+name = "smb"
+type = "tcp"
+# SMB 服务器的内网 IP 和端口
+localIP = "127.0.0.1"
+localPort = 445
+# 服务器映射的端口（不能是 445，选个没被占用的，如 4450）
+remotePort = 4455
