@@ -39,5 +39,3 @@ localIP = "127.0.0.1"
 localPort = 445
 # 服务器映射的端口（不能是 445，选个没被占用的，如 4450）
 remotePort = 445
-#sudo mount -t cifs -o port=4455,username=gaopuguang,password=1999y4m30d //hongkong.gpg123.vip /mnt
-#sudo mount -t cifs //8.218.240.105 /mnt -o port=4455,username=gaopuguang,password=1999y4m30d,vers=3.0,dir_mode=0755,file_mode=0755,mfsymlinks,cache=strict
