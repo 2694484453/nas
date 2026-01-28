@@ -38,5 +38,4 @@ type = "tcp"
 localIP = "127.0.0.1"
 localPort = 445
 # 服务器映射的端口（不能是 445，选个没被占用的，如 4450）
-remotePort = 4455
-#sudo mount -t cifs -o port=4450 //你的服务器IP/share /mnt/local_folder
+remotePort = 445

@@ -1,0 +1,15 @@
+# 代理 1: NFS 主服务 (TCP)
+[[proxies]]
+name = "nfs-main"
+type = "tcp"
+localIP = "127.0.0.1"       # 本地 NFS 服务 IP
+localPort = 2049            # 本地 NFS 端口
+remotePort = 6000           # 公网服务器映射端口 (自定义，未被占用即可)
+
+# 代理 2: NFS Mountd 服务 (TCP)
+[[proxies]]
+name = "nfs-mountd"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 20049           # 本地 mountd 端口
+remotePort = 6001           # 公网服务器映射端口
