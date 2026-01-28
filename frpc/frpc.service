@@ -1,15 +1,22 @@
 [Unit]
-Description=Run FRPC Script at Startup
-Wants=network-online.target
-After=network-online.target
+Description=FRP Client Service
+After=network.target syslog.target
+Wants=network.target
 
 [Service]
 Type=simple
-ExecReload=/bin/kill -HUP $MAINPID
-#需要根据目录位置进行修改
+# 关键修复：指定运行用户为 root (避免某些环境权限或DNS沙盒问题)
+User=root
+# 关键修复：显式指定 DNS 服务器，强制绕过本地可能出问题的 DNS 设置
+# 如果你的环境有代理，也可以在这里加上环境变量
+#Environment="GODEBUG=netdns=go" "HTTPS_PROXY=http://127.0.0.1:7890" "HTTP_PROXY=http://127.0.0.1:7890"
 ExecStart=/usr/local/bin/frpc --config /home/nas/frpc/frpc.toml
+ExecReload=/bin/kill -HUP  $ MAINPID
 Restart=always
 RestartSec=3
+# 增加资源限制，防止被系统 OOM 杀死
+LimitNOFILE=65536
 
 [Install]
-WantedBy=default.target
+# 关键修复：改为标准的 multi-user.target
+WantedBy=multi-user.target
