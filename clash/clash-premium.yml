@@ -3,7 +3,7 @@ services:
   clash:
     image: dreamacro/clash-premium
     container_name: clash-premium
-    restart: unless-stopped
+    restart: always
     ports:
       - "7890:7890/tcp"
       - "7890:7890/udp"
@@ -13,7 +13,7 @@ services:
   yacd:
     image: haishanh/yacd:laster
     container_name: yacd
-    restart: unless-stopped
+    restart: always
     ports:
       - "8888:80"
     environment:
