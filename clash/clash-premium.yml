@@ -6,19 +6,18 @@ services:
     hostname: clash
     restart: unless-stopped
     ports:
-      - "7890:7890"
-      - "7891:7891"
-      - "7892:7892"
+      - "7890:7890/tcp"
+      - "7890:7890/udp"
       - "9090:9090"
     volumes:
       - ./cloudflare.yaml:/root/.config/clash/config.yaml
   yacd:
-    image: ghcr.io/haishanh/yacd:master
+    image: haishanh/yacd:laster
     container_name: yacd
     hostname: yacd
     restart: unless-stopped
     ports:
-      - "9091:80"
+      - "8888:80"
     environment:
       - TZ=Asia/Shanghai
     depends_on:
