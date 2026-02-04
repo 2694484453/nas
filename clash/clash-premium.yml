@@ -11,7 +11,7 @@ services:
     volumes:
       - ./cloudflare.yaml:/root/.config/clash/config.yaml
   yacd:
-    image: haishanh/yacd:laster
+    image: haishanh/yacd
     container_name: yacd
     restart: always
     ports:
