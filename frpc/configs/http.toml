@@ -52,7 +52,7 @@ name = "prometheus-alert"
 type = "http"
 localIP = "127.0.0.1"
 localPort = 9093
-customDomains = ["prometheus-alert.gpg123.cn","alert.gpg123.cn"]
+customDomains = ["alertmanager.gpg123.cn",]
 
 #node-exporter
 [[proxies]]
