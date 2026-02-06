@@ -117,3 +117,11 @@ type = "http"
 localIP = "192.168.3.18"
 localPort = 7860
 customDomains = ["sd.gpg123.cn"]
+
+#fileCodeBox
+[[proxies]]
+name = "filebox"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 12345
+customDomains = ["filebox.gpg123.cn"]
