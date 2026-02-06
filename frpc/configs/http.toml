@@ -12,7 +12,7 @@ name = "fn-video"
 type = "http"
 localIP = "127.0.0.1"
 localPort = 8005
-customDomains = ["video.gpg123.cn","video1.gpg123.cn","video2.gpg123.cn","video3.gpg123.cn","video4.gpg123.cn","video5.gpg123.cn"]
+customDomains = ["fn-video.gpg123.cn"]
 
 # video
 [[proxies]]
@@ -20,7 +20,7 @@ name = "jellyfin-video-server"
 type = "http"
 localIP = "127.0.0.1"
 localPort = 8096
-customDomains = ["jf-video.gpg123.cn","jf-video1.gpg123.cn","jf-video2.gpg123.cn","jf-video3.gpg123.cn"]
+customDomains = ["jf-video.gpg123.cn"]
 
 # 相册
 [[proxies]]
@@ -28,7 +28,7 @@ name = "fn-picture"
 type = "http"
 localIP = "127.0.0.1"
 localPort = 8006
-customDomains = ["picture.gpg123.cn","picture1.gpg123.cn","picture2.gpg123.cn","picture3.gpg123.cn"]
+customDomains = ["picture.gpg123.cn"]
 
 #飞牛
 [[proxies]]
@@ -36,7 +36,7 @@ name = "feiniu-nas"
 type = "http"
 localIP = "127.0.0.1"
 localPort = 5666
-customDomains = ["gpg123.cn"]
+customDomains = ["fn.gpg123.cn"]
 
 #prometheus
 [[proxies]]
